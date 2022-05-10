@@ -1,7 +1,7 @@
 <?php
     session_start();
     // including the database connection file
-    include_once("assets/crud/config.php");
+    
     include_once("class_upload.php");
     
     //Pour update la photo

@@ -4,8 +4,8 @@ session_start();
 
 $databaseHost = 'localhost';
 $databaseName = 'tb_test';
-$databaseUsername = 'root';
-$databasePassword = 'root';
+$databaseUsername = 'login4152';
+$databasePassword = 'WnHZcAuGAeLgOmG';
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 $id_employe = $_SESSION['id'];
 

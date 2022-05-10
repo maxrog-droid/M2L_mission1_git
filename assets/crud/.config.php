@@ -14,9 +14,9 @@ $conn = mysql_connect("localhost","root","root")
  */
 
 $databaseHost = 'localhost';
-$databaseName = 'site atelier';
-$databaseUsername = '';
-$databasePassword = '';
+$databaseName = 'tb_test';
+$databaseUsername = 'login4152';
+$databasePassword = 'WnHZcAuGAeLgOmG';
 
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
  

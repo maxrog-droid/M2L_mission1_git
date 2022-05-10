@@ -4,14 +4,14 @@
 </head>
 <body>
 <?php
-include_once('assets/crud/config.php');
+include_once('config.php');
 
 session_start();
 
 $databaseHost = 'localhost';
 $databaseName = 'tb_test';
-$databaseUsername = 'root';
-$databasePassword = 'root';
+$databaseUsername = 'login4152';
+$databasePassword = 'WnHZcAuGAeLgOmG';
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
 if (isset($_POST['Username'])){
