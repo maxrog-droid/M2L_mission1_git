@@ -3,8 +3,8 @@ session_start();
 
 $databaseHost = 'localhost';
 $databaseName = 'tb_test';
-$databaseUsername = 'login4152';
-$databasePassword = 'WnHZcAuGAeLgOmG';
+$databaseUsername = 'root';
+$databasePassword = 'root';
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
 if(isset($_POST['update']))

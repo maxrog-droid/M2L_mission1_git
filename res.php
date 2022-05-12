@@ -3,15 +3,20 @@
 
 $databaseHost = 'localhost';
 $databaseName = 'tb_test';
-$databaseUsername = 'login4152';
-$databasePassword = 'WnHZcAuGAeLgOmG';
+$databaseUsername = 'root';
+$databasePassword = 'root';
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
 $result = mysqli_query($conn, "SELECT * FROM demande ORDER BY id_demande DESC");
 
-$date = mysqli_query($conn, "SELECT count(*) FROM `demande` WHERE dateDemande = '2022-05-10'");
+//$date = mysqli_query($conn, "SELECT count(*) FROM `demande` WHERE dateDemande = '2022-05-10'");
 
+//$date = mysqli_query($conn, "SELECT dateDemande FROM `demande` WHERE dateDemande BETWEEN NOW() = 30'");
 
+//if (mysql_num_rows($result) > 0) {
+//$result = "UPDATE user set password='$nouveaupassword' WHERE password='$password'";
+//echo 'votre mot de passe a bien été changé !'
+//}
 
 ?>
 <a href="indexuser.html"> Faire une demande </a><br/><br/>

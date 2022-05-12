@@ -40,7 +40,7 @@
 			</tr>
 			<tr> 
 				<td>Mot de passe</td>
-				<td><input type="password" name="Password" minlength="=12"></td>
+				<td><input type="password" name="Password" minlength="8"></td>
 			</tr>
 			<tr> 
 				<td>Nom</td>

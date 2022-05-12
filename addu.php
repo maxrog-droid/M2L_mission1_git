@@ -6,7 +6,7 @@
 <body>
 <?php 
 //including the database connection file
-include_once("assets/crud/config.php");
+include_once("config.php");
 
 if(isset($_POST['Submit'])) {	
 	$username = mysqli_real_escape_string($mysqli, $_POST['Username']);

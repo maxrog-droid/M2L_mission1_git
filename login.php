@@ -10,8 +10,8 @@ session_start();
 
 $databaseHost = 'localhost';
 $databaseName = 'tb_test';
-$databaseUsername = 'login4152';
-$databasePassword = 'WnHZcAuGAeLgOmG';
+$databaseUsername = 'root';
+$databasePassword = 'root';
 $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
 if (isset($_POST['Username'])){
@@ -19,6 +19,7 @@ if (isset($_POST['Username'])){
     $username = mysqli_real_escape_string($conn, $username);
     $password = stripslashes($_REQUEST['Password']);
     $password = mysqli_real_escape_string($conn, $password);
+
       $query = "SELECT * FROM `user` WHERE Username='$username' and Password='".hash('sha256', $password)."'";
       $result = mysqli_query($conn,$query) or die(mysql_error());
       $rows = mysqli_num_rows($result);
