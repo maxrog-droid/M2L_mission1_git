@@ -29,7 +29,7 @@ if(isset($_POST['update']))
 	} else {	
 		//updating the table
 		$result = mysqli_query($conn, "UPDATE demande SET id_responsable ='$id_responsable',etat ='$etat',id_employe='$employe' WHERE id_demande=$id");
-		
+		$result = mysqli_query($conn, "UPDATE user SET disponible ='1' WHERE iduser=$employe");
 		//redirectig to the display page. In our case, it is index.php
 		header("Location: res.php");
 	}
